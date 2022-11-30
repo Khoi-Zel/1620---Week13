@@ -1,3 +1,49 @@
+
+
 body {
     background-color: tan;
+}
+#form{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+label{
+    text-align: center;
+}
+section > button{
+    grid-column: 2;
+}
+
+header{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+header > button{
+    margin-bottom: 25px;
+}
+#submit{
+    text-align: center;
+}
+
+
+
+@media (min-width: 600px) {
+    #form{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #submit{
+        margin-top: 25px;
+    }
+    .lists{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    header {
+    display:flex;
+    flex-direction: row;
+    }
 }
